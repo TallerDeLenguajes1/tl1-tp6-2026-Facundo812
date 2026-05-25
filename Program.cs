@@ -95,3 +95,40 @@ while(reintentar == 1)
     } 
 }
 
+//EJECICIO 3
+double num, num3, num4;
+
+Console.WriteLine("----CalculadoraV2----");
+Console.Write("Ingrese un numero: ");
+while(!double.TryParse(Console.ReadLine(), out num))
+{
+    Console.Write("Lo ingresado no es un numero, intente denuevo: ");
+}
+
+
+Console.WriteLine("---------------------------");
+Console.WriteLine($"Valor absoluto del numero ingresado: {Math.Abs(num)}");
+Console.WriteLine($"Cuadrado del numero ingresado: {Math.Pow(num,2)}");
+Console.WriteLine($"Raiz Cuadrada del numero ingresado: {Math.Sqrt(num)}");
+Console.WriteLine($"Sen del numero ingresado: {Math.Sin(num)}");
+Console.WriteLine($"Cos del numero ingresado: {Math.Cos(num)}");
+Console.WriteLine($"Parte entera del numero ingresado: {Math.Truncate(num)}");
+Console.WriteLine("---------------------------");
+
+
+Console.Write("Ingrese un numero 1: ");
+while(!double.TryParse(Console.ReadLine(), out num3))
+{
+    Console.Write("Lo ingresado no es un numero, intente denuevo: ");
+}
+
+Console.Write("Ingrese un numero 2: ");
+while(!double.TryParse(Console.ReadLine(), out num4))
+{
+    Console.Write("Lo ingresado no es un numero, intente denuevo: ");
+}
+
+Console.WriteLine("---------------------------");
+Console.WriteLine($"Maximo entre los dos numeros ingresados {Math.Max(num3,num4)}");
+Console.WriteLine($"Minimo entre los dos numeros ingresados {Math.Min(num3,num4)}");
+Console.WriteLine("---------------------------");
